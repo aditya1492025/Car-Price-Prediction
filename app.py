@@ -49,3 +49,24 @@ if st.button("Predict Price"):
     car_price = model.predict(input_data_model)
 
     st.markdown('Car Price is going to be '+ str(car_price[0]))
+
+
+
+# footer
+st.markdown("""
+    <style>
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+    <div class="footer">
+        <p>Car Price Prediction App &copy; 2023</p>
+    </div>
+""", unsafe_allow_html=True)
